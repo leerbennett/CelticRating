@@ -1,24 +1,24 @@
-sap.ui.controller("flightweb.index", {
+sap.ui.controller("playerweb.index", {
 	onInit : function(evt) {
 
 		this.getView().addDelegate(
 				{
 					onBeforeShow : function(evt) {
 						var oModel = new sap.ui.model.odata.ODataModel(
-								"FlightOData.svc/");
+								"PlayerOData.svc/");
 						evt.to.setModel(oModel);
 					}
 				});
 	},
 
 	onAdd : function(evt) {
-		app.to("addflight");
+		app.to("addplayer");
 	},
 	onDetailPress : function(event) {
 		var bindingContext = event.getSource().getBindingContext();
-		var flightid = bindingContext.getProperty("Id");
+		var playerid = bindingContext.getProperty("Id");
 		var myObject = bindingContext.getObject();
-		app.to("addflight", "slide", bindingContext);
+		app.to("addplayer", "slide", bindingContext);
 
 	}
 });

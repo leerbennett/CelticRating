@@ -1,13 +1,13 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" controllerName="flightweb.AddFlight" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="sap.m" controllerName="playerweb.AddPlayer" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
-	<Page title="AddFlight" id="page" showNavButton="true"
+	<Page title="AddPlayer" id="page" showNavButton="true"
 		navButtonPress="handleNavButtonPress">
 		<l:Grid defaultSpan="L12 M12 S12" width="auto">
 			<l:content>
-				<f:SimpleForm id="FlightAdd" minWidth="1024"
+				<f:SimpleForm id="PlayerAdd" minWidth="1024"
 					maxContainerCols="2" editable="true" layout="ResponsiveGridLayout"
-					title="Flight Add" labelSpanL="3" labelSpanM="3" emptySpanL="4"
+					title="Player Add" labelSpanL="3" labelSpanM="3" emptySpanL="4"
 					emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
 					<f:content>
 						<Input id="id" value="{Id}" visible="false" />

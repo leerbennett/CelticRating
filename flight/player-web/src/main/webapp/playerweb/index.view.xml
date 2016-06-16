@@ -1,14 +1,14 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" controllerName="flightweb.index" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Flight Web">
+	xmlns="sap.m" controllerName="playerweb.index" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Player Web">
 		<headerContent>
 			<Button icon="sap-icon://add" press="onAdd" />
 		</headerContent>
-		<Table id="idProductsTable" inset="false" items="{/Flights}"
+		<Table id="idProductsTable" inset="false" items="{/Players}"
 			itemPress="rowSelected">
 			<headerToolbar>
 				<Toolbar>
-					<Label text="Flights"></Label>
+					<Label text="Players"></Label>
 				</Toolbar>
 			</headerToolbar>
 			<columns>

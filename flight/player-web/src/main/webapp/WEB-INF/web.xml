@@ -4,7 +4,7 @@
 							http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		version="2.5"
 		xmlns="http://java.sun.com/xml/ns/javaee">
-	<display-name>Flight Web Application</display-name>
+	<display-name>Player Web Application</display-name>
 	<servlet>
 		<servlet-name>JPARefScenarioServlet</servlet-name>
 		<servlet-class>org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet</servlet-class>
@@ -14,17 +14,17 @@
 		</init-param>
 		<init-param>
 			<param-name>org.apache.olingo.odata2.service.factory</param-name>
-			<param-value>allan.flight.service.FlightODataJPAServiceFactory</param-value>
+			<param-value>leerbennett.celtic.service.PlayerODataJPAServiceFactory</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>JPARefScenarioServlet</servlet-name>
-		<url-pattern>/FlightOData.svc/*</url-pattern>
+		<url-pattern>/PlayerOData.svc/*</url-pattern>
 	</servlet-mapping>
 	<filter>
 		<filter-name>CORS</filter-name>
-		<filter-class>allan.flight.service.CORSFilter</filter-class>
+		<filter-class>leerbennett.celtic.service.CORSFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>CORS</filter-name>

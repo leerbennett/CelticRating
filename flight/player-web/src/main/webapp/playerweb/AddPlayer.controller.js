@@ -1,6 +1,5 @@
-sap.ui
-		.controller(
-				"flightweb.AddFlight",
+sap.ui.controller(
+				"playerweb.AddPlayer",
 				{
 					handleNavButtonPress : function(evt) {
 						app.back();
@@ -16,9 +15,9 @@ sap.ui
 														evt.to.setModel(evt.data.oModel);
 														evt.to.setBindingContext(evt.data);
 													} else {
-														var oModel = new sap.ui.model.odata.ODataModel("FlightOData.svc/");
+														var oModel = new sap.ui.model.odata.ODataModel("PlayerOData.svc/");
 														evt.to.setModel(oModel);
-														evt.to.byId("departure").setValue("");
+														evt.to.byId("name").setValue("");
 														evt.to.byId("destination").setValue("");
 														evt.to.byId("id").setValue("");
 													}
@@ -33,8 +32,8 @@ sap.ui
 
 					handleDeletePress : function() {
 						var oModel = this.getView().getModel();
-						var flightid = this.getView().byId("id").getValue();
-						oModel.remove("/Flights(" + flightid + "L)");
+						var playerid = this.getView().byId("id").getValue();
+						oModel.remove("/Players(" + playerid + "L)");
 						oModel.refresh();
 						app.back();
 
@@ -51,7 +50,7 @@ sap.ui
 								"destination").getValue();
 						if (vProperties.Id == "") {
 							vProperties.Id = 0;
-							oModel.createEntry("Flights", vProperties);
+							oModel.createEntry("Players", vProperties);
 
 						} else {
 							var oEntry = {};

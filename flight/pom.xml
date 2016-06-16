@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>leerbennett.celtic</groupId>
-    <artifactId>flight</artifactId>
+    <artifactId>player</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <name>Celtic Player Rating</name>
