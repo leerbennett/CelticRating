@@ -4,16 +4,16 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>allan.flight</groupId>
+    <groupId>leerbennett.celtic</groupId>
     <artifactId>flight</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
-    <name>FLight Example</name>
+    <name>Celtic Player Rating</name>
 
     <modules>
-        <module>flight-persistence</module>
-        <module>flight-service</module>
-		<module>flight-web</module>
+        <module>player-persistence</module>
+        <module>player-service</module>
+		<module>player-web</module>
     </modules>
 
     <build>

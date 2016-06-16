@@ -1,18 +1,18 @@
-package allan.flight.persistence;
+package leerbennett.celtic.persistence;
 
 import java.io.Serializable;
 import javax.persistence.*;
 
 /**
- * Entity implementation class for Entity: Flight
+ * Entity implementation class for Entity: Player
  *
  */
 @Entity
-public class Flight implements Serializable {
+public class Player implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	public Flight() {
+	public Player() {
 		super();
 	}
 
@@ -20,7 +20,7 @@ public class Flight implements Serializable {
 	@GeneratedValue
 	private Long id;
 	
-	private String departure;
+	private String name;
 	
 	private String destination;
 
@@ -32,12 +32,12 @@ public class Flight implements Serializable {
 		this.id = id;
 	}
 
-	public String getDeparture() {
-		return departure;
+	public String getName() {
+		return name;
 	}
 
-	public void setDeparture(String departure) {
-		this.departure = departure;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getDestination() {
