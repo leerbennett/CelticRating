@@ -44,8 +44,8 @@ sap.ui.controller(
 
 						var vProperties = {};
 						vProperties.Id = this.getView().byId("id").getValue();
-						vProperties.Departure = this.getView()
-								.byId("departure").getValue();
+						vProperties.Name = this.getView()
+								.byId("name").getValue();
 						vProperties.Destination = this.getView().byId(
 								"destination").getValue();
 						if (vProperties.Id == "") {
@@ -59,7 +59,7 @@ sap.ui.controller(
 									.getBindingContext();
 							mParameters.success = this._fnSuccess;
 							mParameters.error = this._fnError;
-							oEntry.Departure = vProperties.Departure;
+							oEntry.Name = vProperties.Name;
 							oEntry.Destination = vProperties.Destination;
 							oModel.update("", oEntry, mParameters);
 						}

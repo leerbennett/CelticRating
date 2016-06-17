@@ -16,7 +16,7 @@
 					<Text text="Id" />
 				</Column>
 				<Column minScreenWidth="Tablet" demandPopin="true">
-					<Text text="From" />
+					<Text text="Name" />
 				</Column>
 				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
 					<Text text="To" />
@@ -26,7 +26,7 @@
 				<ColumnListItem type="Detail" detailPress="onDetailPress">
 					<cells>
 						<ObjectIdentifier title="{Id}" />
-						<Text text="{Departure}" />
+						<Text text="{Name}" />
 						<Text text="{Destination}" />
 					</cells>
 				</ColumnListItem>

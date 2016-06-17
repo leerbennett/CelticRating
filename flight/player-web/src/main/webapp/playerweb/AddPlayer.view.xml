@@ -11,8 +11,8 @@
 					emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
 					<f:content>
 						<Input id="id" value="{Id}" visible="false" />
-						<Label text="Departure" />
-						<Input id="departure" value="{Departure}" />
+						<Label text="Name" />
+						<Input id="name" value="{Name}" />
 						<Label text="Destination" />
 						<Input id="destination" value="{Destination}">
 						</Input>
